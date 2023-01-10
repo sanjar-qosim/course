@@ -19,7 +19,7 @@ public class BaseTest {
     protected CarLoansPage carLoansPage = new CarLoansPage(driver);
 
     @AfterEach
-    void cleaCookiesAndLocalStorage(){
+    void clearCookiesAndLocalStorage(){
         if(CLEAR_COOKIES){
             JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
             driver.manage().deleteAllCookies();
